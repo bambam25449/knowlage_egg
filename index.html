@@ -577,7 +577,7 @@ function check_sector(){
             check = true;
         } else {
             check = false;
-            <span class="loom_code_java_reserved">return </span>false;
+            return false;
         }
     });
     
@@ -596,7 +596,7 @@ function check_pref(obj_id, status, now_obj){
             check = true;
         } else {
             check = false;
-            <span class="loom_code_java_reserved">return </span>false;
+            return false;
         }
     });
 
@@ -679,9 +679,9 @@ $data = $this-&gt;TABLE-&gt;patchEntity($data, $this-&gt;request-&gt;getData(), 
             -&gt;add('katakana', 'custom', [
                 'rule' =&gt; function ($value, $context) {
                     if (!preg_match(<span class="loom_code_java_string">"/^[ァ-・ヽヾ゛゜ー]+$/u"</span>, $value)) {
-                        <span class="loom_code_java_reserved">return </span>false;
+                        return false;
                     }
-                    <span class="loom_code_java_reserved">return </span>true;
+                    return true;
                 }, 'message' =&gt; __d('validation', 'full-width katakana.')
             ]);
 </pre>
@@ -693,7 +693,7 @@ $data = $this-&gt;TABLE-&gt;patchEntity($data, $this-&gt;request-&gt;getData(), 
  * 
  * <span class="loom_code_java_javadoctag">@param</span> string $value
  * 
- * @<span class="loom_code_java_reserved">return </span>string $value
+ * @return string $value
  */</span>
 if (!function_exists('mb_trim')) {
     function mb_trim($value) {
@@ -702,7 +702,7 @@ if (!function_exists('mb_trim')) {
         $value = mb_ereg_replace(<span class="loom_code_java_string">"^[\n\r\s\t　]+"</span>, '', $value);
         $value = mb_ereg_replace(<span class="loom_code_java_string">"[\n\r\s\t　]+$"</span>, '', $value);
         $value = trim($value);
-        <span class="loom_code_java_reserved">return </span>$value;
+        return $value;
     }
 }
 </pre>
@@ -936,22 +936,22 @@ end
 <span class="loom_code_java_linecomment">// ばむ hira-gana</span>
 
 echo mb_convert_kana('ばむ', 'C')
-<span class="loom_code_java_reserved">return </span>バム
+return バム
 
 echo mb_convert_kana('ばむ', 'h')
-<span class="loom_code_java_reserved">return </span>ﾊﾞﾑ
+return ﾊﾞﾑ
 
 echo mb_convert_kana('バム', 'k')
-<span class="loom_code_java_reserved">return </span>ﾊﾞﾑ
+return ﾊﾞﾑ
 
 echo mb_convert_kana('バム', 'c')
-<span class="loom_code_java_reserved">return </span>ばむ
+return ばむ
 
 echo mb_convert_kana('ﾊﾞﾑ', 'KV')
-<span class="loom_code_java_reserved">return </span>バム
+return バム
 
 echo mb_convert_kana('ﾊﾞﾑ', 'HV')
-<span class="loom_code_java_reserved">return </span>ばむ
+return ばむ
 
 </pre>
 <br>
@@ -1276,7 +1276,7 @@ nendo = 2018<br>
                 $AR_base_age[$i] = $i;
             }
         
-            <span class="loom_code_java_reserved">return </span>$AR_base_age;
+            return $AR_base_age;
 
         }), 
 </pre>
