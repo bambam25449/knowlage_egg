@@ -488,8 +488,8 @@ composer self-update &amp;&amp; composer create-project --prefer-dist cakephp/ap
 <br>
 <h1 id="loom-header-13"> 2020/06/17 install composer on vm</h1>
 <pre class="loom_code loom_code_java">cd /
-php -r <span class="loom_code_java_string">"copy('https:<span class="loom_code_java_linecomment">//getcomposer.org/installer', 'composer-setup.php');"</span></span>
-HASH=<span class="loom_code_java_string">"$(wget -q -O - https:<span class="loom_code_java_linecomment">//composer.github.io/installer.sig)"</span></span>
+php -r <span class="loom_code_java_string">"copy('https://getcomposer.org/installer', 'composer-setup.php');"</span>
+HASH=<span class="loom_code_java_string">"$(wget -q -O - https://composer.github.io/installer.sig)"</span>
 php -r <span class="loom_code_java_string">"if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"</span>
 php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 </pre>
