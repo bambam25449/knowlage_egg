@@ -5,18 +5,14 @@
     <meta http-equiv="Content-Style-Type" content="text/css">
     <meta http-equiv="Content-Script-Type" content="text/JavaScript">
     <meta http-equiv="Imagetoolbar" content="no">
-    <link rel="shortcut icon" href="https://egg-jp.backlog.jp/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://egg-jp.backlog.jp/apple-touch-icon.png">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="assets" href="https://assets.backlog.jp/playassets/1.30.2">
     <title>[THAI] knowlage | Wiki | Backlog</title>
     <link rel="stylesheet" href="./[THAI] knowlage _ Wiki(for printing) _ Backlog_files/WikiPrint.css" type="text/css" media="all">
 
-    
     <script src="./[THAI] knowlage _ Wiki(for printing) _ Backlog_files/svg4everybody.min.js"></script>
     <script>
-      
-      
-      
         if( window.addEventListener ){
             window.addEventListener('load', svg4everybody);
         }else if( window.attachEvent ){
@@ -89,51 +85,51 @@ mv /etc/yum.repos.d/CentOS-SCLo-scl.repo /etc/yum.repos.d/CentOS-SCLo-scl.repo_o
 <p>vi /etc/yum.repos.d/CentOS-Base.repo</p>
 <pre class="loom_code loom_code_java">[base]
 name=CentOS-$releasever - Base
-baseurl=https:<span class="loom_code_java_linecomment">//vault.centos.org/6.10/os/$basearch/</span>
+baseurl=https://vault.centos.org/6.10/os/$basearch/
 gpgcheck=1
-gpgkey=https:<span class="loom_code_java_linecomment">//vault.centos.org/6.10/os/$basearch//RPM-GPG-KEY-CentOS-6</span>
+gpgkey=https://vault.centos.org/6.10/os/$basearch//RPM-GPG-KEY-CentOS-6
 </pre>
 <p>vi /etc/yum.repos.d/CentOS-fasttrack.repo</p>
 <pre class="loom_code loom_code_java">[fasttrack]
 name=CentOS-6 - fasttrack
-baseurl=https:<span class="loom_code_java_linecomment">//vault.centos.org/6.10/$basearch/</span>
+baseurl=https://vault.centos.org/6.10/$basearch/
 gpgcheck=1
 enabled=0
-gpgkey=https:<span class="loom_code_java_linecomment">//vault.centos.org/6.10/$basearch/RPM-GPG-KEY-CentOS-6</span>
+gpgkey=https://vault.centos.org/6.10/$basearch/RPM-GPG-KEY-CentOS-6
 </pre>
 <p>vi /etc/yum.repos.d/CentOS-SCLo-scl.repo</p>
 <pre class="loom_code loom_code_java"># CentOS-SCLo-sclo.repo
 #
-# Please see http:<span class="loom_code_java_linecomment">//wiki.centos.org/SpecialInterestGroup/SCLo <span class="loom_code_java_reserved">for</span> more</span>
-# in<span class="loom_code_java_reserved">for</span>mation
+# Please see http://wiki.centos.org/SpecialInterestGroup/SCLo for more
+# information
 
 [centos-sclo-sclo]
 name=CentOS-6 - SCLo sclo
-baseurl=https:<span class="loom_code_java_linecomment">//vault.centos.org/6.10/sclo/$basearch/sclo/</span>
+baseurl=https://vault.centos.org/6.10/sclo/$basearch/sclo/
 gpgcheck=1
 enabled=1
-gpgkey=file:<span class="loom_code_java_linecomment">///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo</span>
+gpgkey=file://etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
 [centos-sclo-sclo-testing]
 name=CentOS-6 - SCLo sclo Testing
-baseurl=https:<span class="loom_code_java_linecomment">//vault.centos.org/6.10/sclo/$basearch/sclo/</span>
+baseurl=https://vault.centos.org/6.10/sclo/$basearch/sclo/
 gpgcheck=0
 enabled=0
-gpgkey=file:<span class="loom_code_java_linecomment">///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo</span>
+gpgkey=file://etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
 [centos-sclo-sclo-source]
 name=CentOS-6 - SCLo sclo Sources
-baseurl=https:<span class="loom_code_java_linecomment">//vault.centos.org/6.10/sclo/$basearch/sclo/</span>
+baseurl=https://vault.centos.org/6.10/sclo/$basearch/sclo/
 gpgcheck=1
 enabled=0
-gpgkey=file:<span class="loom_code_java_linecomment">///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo</span>
+gpgkey=file://etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
 [centos-sclo-sclo-debuginfo]
 name=CentOS-6 - SCLo sclo Debuginfo
-baseurl=https:<span class="loom_code_java_linecomment">//vault.centos.org/6.10/sclo/$basearch/</span>
+baseurl=https://vault.centos.org/6.10/sclo/$basearch/
 gpgcheck=1
 enabled=0
-gpgkey=file:<span class="loom_code_java_linecomment">///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo</span>
+gpgkey=file://etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 </pre>
 <h1 id="loom-header-1">2021/05/13 centos boot failed</h1>
 <pre class="loom_code loom_code_java">xfs_repair -L /dev/dm-0 &amp;&amp; reboot
@@ -145,20 +141,21 @@ gpgkey=file:<span class="loom_code_java_linecomment">///etc/pki/rpm-gpg/RPM-GPG-
 4. select clone with HTTP<br>
 5. click copy<br>
 6. paste and change url from egg.co.th to 192.168.1.40<br>
-7. copy and paste in sourcetre  or command<br>
-example:{code}<br>
-original: <a href="http://egg.co.th:8081/root/smpl.git" target="_blank" rel="noopener noreferrer" class="loom-link-another">http://egg.co.th:8081/root/smpl.git</a><br>
-change tto: <a href="http://192.168.1.40:8081/root/smpl.git" target="_blank" rel="noopener noreferrer" class="loom-link-another">http://192.168.1.40:8081/root/smpl.git</a><br>
-{/code}</p>
+7. copy and paste in sourcetre  or command
+</p>
+<pre class="loom_code loom_code_java">example:
+original: http://egg.co.th:8081/root/smpl.git
+change to: http://192.168.1.40:8081/root/smpl.git
+</pre>
 <h1 id="loom-header-3">2021/01/19 local git server</h1>
-<pre class="loom_code loom_code_java">url: http:<span class="loom_code_java_linecomment">//192.168.1.40:8081/users/sign_in</span>
+<pre class="loom_code loom_code_java">url: http://192.168.1.40:8081/users/sign_in
 user: root
 password: ^eggthai$
 </pre>
 <h1 id="loom-header-4">2020/12/17 find buttom frame</h1>
 <pre class="loom_code loom_code_java">$('#container_element').scroll( function(){
-    console.log($(<span class="loom_code_java_reserved">this</span>).scrollTop()+' + '+ $(<span class="loom_code_java_reserved">this</span>).height()+' = '+ ($(<span class="loom_code_java_reserved">this</span>).scrollTop() + $(<span class="loom_code_java_reserved">this</span>).height())   +' _ '+ $(<span class="loom_code_java_reserved">this</span>)[0].scrollHeight  );
-    <span class="loom_code_java_reserved">if</span>($(<span class="loom_code_java_reserved">this</span>).scrollTop() + $(<span class="loom_code_java_reserved">this</span>).height() == $(<span class="loom_code_java_reserved">this</span>)[0].scrollHeight){
+    console.log($(this).scrollTop()+' + '+ $(this).height()+' = '+ ($(this).scrollTop() + $(this).height())   +' _ '+ $(this)[0].scrollHeight  );
+    if($(this).scrollTop() + $(this).height() == $(this)[0].scrollHeight){
         console.log('bottom found');
     }
 });
@@ -169,8 +166,8 @@ password: ^eggthai$
 2. download wordpress from link <a href="https://th.wordpress.org/download/" target="_blank" rel="noopener noreferrer" class="loom-link-another">https://th.wordpress.org/download/</a><br>
 3. extract file to xampp/htdocs/<br>
 4. setup config wp-config.php</p>
-<pre class="loom_code loom_code_java"><span class="loom_code_java_linecomment">// ** MySQL settings - You can get <span class="loom_code_java_reserved">this</span> info from your web host ** //</span>
-<span class="loom_code_java_javadoccomment">/** The name of the database <span class="loom_code_java_reserved">for</span> WordPress */</span>
+<pre class="loom_code loom_code_java"><span class="loom_code_java_linecomment">// ** MySQL settings - You can get this info from your web host ** //</span>
+<span class="loom_code_java_javadoccomment">/** The name of the database for WordPress */</span>
 define( 'DB_NAME', 'wordpress' );<span class="loom_code_java_linecomment">// database name</span>
 
 <span class="loom_code_java_javadoccomment">/** MySQL database username */</span>
@@ -185,25 +182,25 @@ define( 'DB_HOST', 'localhost' );
 <p>5. run project to install <a href="http://localhost/wordpress/wp-admin/install.php" target="_blank" rel="noopener noreferrer" class="loom-link-another">http://localhost/wordpress/wp-admin/install.php</a></p>
 <h1 id="loom-header-6">2020/09/28 install wordpress+postgresql on centos 8</h1>
 <p>1.create wordpress database user &amp; password</p>
-<pre class="loom_code loom_code_java">su<span class="loom_code_java_reserved">do</span> su - postgres
+<pre class="loom_code loom_code_java">sudo su - postgres
 psql
 create database dbname;
-<span class="loom_code_java_linecomment">// <span class="loom_code_java_reserved">if</span> use user postgres can skip</span>
+<span class="loom_code_java_linecomment">// if use user postgres can skip</span>
 create user dbuser with password 'dbuser_pass';
-<span class="loom_code_java_linecomment">// <span class="loom_code_java_reserved">if</span> use user postgres can skip</span>
+<span class="loom_code_java_linecomment">// if use user postgres can skip</span>
 grant all privileges on database dbname to dbuser;
 \q
 </pre>
 <p>2. download and install wordpress</p>
 <pre class="loom_code loom_code_java">cd /work
-wget https:<span class="loom_code_java_linecomment">//wordpress.org/latest.tar.gz</span>
+wget https://wordpress.org/latest.tar.gz
 tar -xzvf latest.tar.gz
 </pre>
 <p>3. install pg4wp</p>
 <pre class="loom_code loom_code_java">cd /work/wordpress/wp-content
-git clone https:<span class="loom_code_java_linecomment">//github.com/kevinoid/postgresql-<span class="loom_code_java_reserved">for</span>-wordpress.git</span>
-mv postgresql-<span class="loom_code_java_reserved">for</span>-wordpress/pg4wp pg4wp
-rm -rf postgresql-<span class="loom_code_java_reserved">for</span>-wordpress
+git clone https://github.com/kevinoid/postgresql-for-wordpress.git
+mv postgresql-for-wordpress/pg4wp pg4wp
+rm -rf postgresql-for-wordpress
 cp pg4wp/db.php db.php
 </pre>
 <p>4. config wordpress db</p>
@@ -213,7 +210,7 @@ cp wp-config-sample.php wp-config.php
 define( 'DB_NAME', 'wordpress' );
 define( 'DB_USER', 'wordpress' );
 define( 'DB_PASSWORD', 'wordpress' );
-<span class="loom_code_java_linecomment">// <span class="loom_code_java_reserved">if</span> not used <span class="loom_code_java_reserved">default</span> port set it with server:port</span>
+<span class="loom_code_java_linecomment">// if not used default port set it with server:port</span>
 define( 'DB_HOST', '192.168.7.7:10110' );
 </pre>
 <p>5. run install script</p>
@@ -319,7 +316,7 @@ ${expected_result}     Podcasts ไทย
     Wait Until Page Contains    ${expected_result}
 
 *** Test Cases ***
-Search <span class="loom_code_java_reserved">case</span>
+Search case
    เปิดเว็บ google.com
    ค้นหาตาม keywords
    รอผลลัพธ์
@@ -355,7 +352,7 @@ ${service}      service001
     Wait Until Page Contains    ${service}
 
 *** Test Cases ***
-Search <span class="loom_code_java_reserved">case</span>
+Search case
    เปิดเว็บ login
    กรอกข้อมูล
    รอผลลัพธ์
@@ -397,7 +394,7 @@ ${ASP}          ASP
 *** Keywords ***
 เปิดเว็บ login
     Open Browser     ${url}     ${browser}
-    Maximize Browser Win<span class="loom_code_java_reserved">do</span>w
+    Maximize Browser Window
 กรอกข้อมูล
     Input Text    name=user_login    ${username}
     Input Text    name=password      ${password}
@@ -424,10 +421,10 @@ ${ASP}          ASP
     Select Checkbox    xpath=<span class="loom_code_java_linecomment">//*[@id=<span class="loom_code_java_string">"lbl_status"</span>]</span>
     Scroll Element Into View        xpath=<span class="loom_code_java_linecomment">//*[@id=<span class="loom_code_java_string">"file_"</span>]</span>
     Set Focus To Element            xpath=<span class="loom_code_java_linecomment">//*[@id=<span class="loom_code_java_string">"file_"</span>]</span>
-    Choose File    id=file_     D:<span class="loom_code_java_linecomment">//robot/<span class="loom_code_java_reserved">do</span>wnload.jpg</span>
+    Choose File    id=file_     D:<span class="loom_code_java_linecomment">//robot/download.jpg</span>
 
 *** Test Cases ***
-Search <span class="loom_code_java_reserved">case</span>
+Search case
    เปิดเว็บ login
    กรอกข้อมูล
    รอผลลัพธ์
@@ -460,19 +457,19 @@ xpath = //a[.//text()='ASP管理']</p>
 <h1 id="loom-header-11"> 2020/07/24 config php-cs-fixer for vscode</h1>
 <p>1. install extension</p>
 <pre class="loom_code loom_code_java"> - open vscode
- - ctrl+sh<span class="loom_code_java_reserved">if</span>t+x
+ - ctrl+shift+x
  - type vscode-php-cs-fixer
  - click install
 </pre>
 <p>2. config php-cs-fixer by project</p>
 <pre class="loom_code loom_code_java"> - open project folder example: /work/river
- - mkdir .vscode <span class="loom_code_java_reserved">if</span> not exists
+ - mkdir .vscode if not exists
  - create file settings.json and copy &amp; paste
 </pre>
 <br>
 <p>code สำหรับ copy ใส่ใน file settings.json</p>
 <br>
-<pre class="loom_code loom_code_java"> <span class="loom_code_java_linecomment">//Place your settings in <span class="loom_code_java_reserved">this</span> file to overwrite the <span class="loom_code_java_reserved">default</span> settings</span>
+<pre class="loom_code loom_code_java"> <span class="loom_code_java_linecomment">//Place your settings in this file to overwrite the default settings</span>
 {
     <span class="loom_code_java_string">"vscode-php-cs-fixer.config"</span>: <span class="loom_code_java_string">"/work/river/bin/.php_cs"</span>,
 }
@@ -493,7 +490,7 @@ composer self-update &amp;&amp; composer create-project --prefer-dist cakephp/ap
 <pre class="loom_code loom_code_java">cd /
 php -r <span class="loom_code_java_string">"copy('https:<span class="loom_code_java_linecomment">//getcomposer.org/installer', 'composer-setup.php');"</span></span>
 HASH=<span class="loom_code_java_string">"$(wget -q -O - https:<span class="loom_code_java_linecomment">//composer.github.io/installer.sig)"</span></span>
-php -r <span class="loom_code_java_string">"<span class="loom_code_java_reserved">if</span> (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer ver<span class="loom_code_java_reserved">if</span>ied'; } <span class="loom_code_java_reserved">else</span> { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"</span>
+php -r <span class="loom_code_java_string">"if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"</span>
 php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 </pre>
 <br>
@@ -508,8 +505,8 @@ note: change detail of [????]</p>
     seeds: '/work/[project]/config/Seeds'
 
 environments:
-    <span class="loom_code_java_reserved">default</span>_migration_table: phinxlog
-    <span class="loom_code_java_reserved">default</span>_database: development
+    default_migration_table: phinxlog
+    default_database: development
     development:
         #supports mysql, pgsql, sqlite, sqlsrv
         adapter: pgsql
@@ -524,7 +521,7 @@ version_order: creation
 </pre>
 <p>2. start web from command at /work/project<br>
 note: change detail of [????]</p>
-<pre class="loom_code loom_code_java">php -S [host_name_or_ip]:[listen_port] /work/[project]/ven<span class="loom_code_java_reserved">do</span>r/robmorgan/phinx/app/web.php
+<pre class="loom_code loom_code_java">php -S [host_name_or_ip]:[listen_port] /work/[project]/vendor/robmorgan/phinx/app/web.php
 </pre>
 <p>3. can run command on web browser with<br>
 status:   http://[host_name_or_ip]:[listen_port]/<br>
@@ -536,22 +533,22 @@ rollback: http://[host_name_or_ip]:[listen_port]/rollback</p>
 
 &lt;div id=<span class="loom_code_java_string">"sector_0"</span>&gt;
 
-&lt;input type=<span class="loom_code_java_string">"checkbox"</span> name=<span class="loom_code_java_string">"sv_pref_cd[]"</span> class=<span class="loom_code_java_string">"<span class="loom_code_java_reserved">for</span>m-check-input"</span> value=<span class="loom_code_java_string">"01"</span> id=<span class="loom_code_java_string">"sv_pref_cd-01"</span> onclick=<span class="loom_code_java_string">"check_pref(&amp;quot;sector_0&amp;quot;, <span class="loom_code_java_reserved">this</span>.checked, &amp;quot;sv_sector-0&amp;quot;)"</span>&gt;
-&lt;label <span class="loom_code_java_reserved">for</span>=<span class="loom_code_java_string">"sv_pref_cd-01"</span>&gt; 北海道&lt;/label&gt;
+&lt;input type=<span class="loom_code_java_string">"checkbox"</span> name=<span class="loom_code_java_string">"sv_pref_cd[]"</span> class=<span class="loom_code_java_string">"form-check-input"</span> value=<span class="loom_code_java_string">"01"</span> id=<span class="loom_code_java_string">"sv_pref_cd-01"</span> onclick=<span class="loom_code_java_string">"check_pref(&amp;quot;sector_0&amp;quot;, this.checked, &amp;quot;sv_sector-0&amp;quot;)"</span>&gt;
+&lt;label for=<span class="loom_code_java_string">"sv_pref_cd-01"</span>&gt; 北海道&lt;/label&gt;
 
-&lt;input type=<span class="loom_code_java_string">"checkbox"</span> name=<span class="loom_code_java_string">"sv_pref_cd[]"</span> class=<span class="loom_code_java_string">"<span class="loom_code_java_reserved">for</span>m-check-input"</span> value=<span class="loom_code_java_string">"02"</span> id=<span class="loom_code_java_string">"sv_pref_cd-02"</span> onclick=<span class="loom_code_java_string">"check_pref(&amp;quot;sector_0&amp;quot;, <span class="loom_code_java_reserved">this</span>.checked, &amp;quot;sv_sector-0&amp;quot;)"</span>&gt;
-&lt;label <span class="loom_code_java_reserved">for</span>=<span class="loom_code_java_string">"sv_pref_cd-02"</span>&gt; 青森県&lt;/label&gt;&lt;/div&gt;
+&lt;input type=<span class="loom_code_java_string">"checkbox"</span> name=<span class="loom_code_java_string">"sv_pref_cd[]"</span> class=<span class="loom_code_java_string">"form-check-input"</span> value=<span class="loom_code_java_string">"02"</span> id=<span class="loom_code_java_string">"sv_pref_cd-02"</span> onclick=<span class="loom_code_java_string">"check_pref(&amp;quot;sector_0&amp;quot;, this.checked, &amp;quot;sv_sector-0&amp;quot;)"</span>&gt;
+&lt;label for=<span class="loom_code_java_string">"sv_pref_cd-02"</span>&gt; 青森県&lt;/label&gt;&lt;/div&gt;
 
-&lt;input type=<span class="loom_code_java_string">"checkbox"</span> name=<span class="loom_code_java_string">"sv_pref_cd[]"</span> class=<span class="loom_code_java_string">"<span class="loom_code_java_reserved">for</span>m-check-input"</span> value=<span class="loom_code_java_string">"03"</span> id=<span class="loom_code_java_string">"sv_pref_cd-03"</span>  onclick=<span class="loom_code_java_string">"check_pref(&amp;quot;sector_0&amp;quot;, <span class="loom_code_java_reserved">this</span>.checked, &amp;quot;sv_sector-0&amp;quot;)"</span>&gt;
-&lt;label <span class="loom_code_java_reserved">for</span>=<span class="loom_code_java_string">"sv_pref_cd-03"</span>&gt; 岩手県&lt;/label&gt;
+&lt;input type=<span class="loom_code_java_string">"checkbox"</span> name=<span class="loom_code_java_string">"sv_pref_cd[]"</span> class=<span class="loom_code_java_string">"form-check-input"</span> value=<span class="loom_code_java_string">"03"</span> id=<span class="loom_code_java_string">"sv_pref_cd-03"</span>  onclick=<span class="loom_code_java_string">"check_pref(&amp;quot;sector_0&amp;quot;, this.checked, &amp;quot;sv_sector-0&amp;quot;)"</span>&gt;
+&lt;label for=<span class="loom_code_java_string">"sv_pref_cd-03"</span>&gt; 岩手県&lt;/label&gt;
 
 &lt;/div&gt;
 
 $(function() {
     $(<span class="loom_code_java_string">"#sv_all"</span>).click( function(){
-        <span class="loom_code_java_reserved">if</span>($('#sv_all').is(':checked')){
+        if($('#sv_all').is(':checked')){
             checkall_sector(<span class="loom_code_java_string">"sector_0"</span>, true, <span class="loom_code_java_string">"sv_sector-0"</span>);
-        } <span class="loom_code_java_reserved">else</span> {
+        } else {
             checkall_sector(<span class="loom_code_java_string">"sector_0"</span>, false, <span class="loom_code_java_string">"sv_sector-0"</span>);
         }
     });
@@ -559,16 +556,16 @@ $(function() {
 
 
 function checkall_sector(obj_id, status, main_id = <span class="loom_code_java_string">""</span>, from = <span class="loom_code_java_string">""</span>){
-    <span class="loom_code_java_reserved">if</span>(main_id != <span class="loom_code_java_string">""</span>){
+    if(main_id != <span class="loom_code_java_string">""</span>){
         $(<span class="loom_code_java_string">"#"</span> + main_id).prop(<span class="loom_code_java_string">"checked"</span>, status);
 
-        <span class="loom_code_java_reserved">if</span>(from == <span class="loom_code_java_string">"check_box"</span>){
+        if(from == <span class="loom_code_java_string">"check_box"</span>){
             check_sector();
         }
     }
     
     $(<span class="loom_code_java_string">"div#"</span> + obj_id).find(<span class="loom_code_java_string">"input"</span>).each(function(){
-        $(<span class="loom_code_java_string">"#"</span> + <span class="loom_code_java_reserved">this</span>.id).prop(<span class="loom_code_java_string">"checked"</span>, status);
+        $(<span class="loom_code_java_string">"#"</span> + this.id).prop(<span class="loom_code_java_string">"checked"</span>, status);
     });
 }
 
@@ -576,17 +573,17 @@ function check_sector(){
 
     var check = false;
     $(<span class="loom_code_java_string">"div#pref_area"</span>).find(<span class="loom_code_java_string">"input[name='sv_sector[]']"</span>).each(function(){
-        <span class="loom_code_java_reserved">if</span>($(<span class="loom_code_java_string">"#"</span> + <span class="loom_code_java_reserved">this</span>.id).is(':checked')){
+        if($(<span class="loom_code_java_string">"#"</span> + this.id).is(':checked')){
             check = true;
-        } <span class="loom_code_java_reserved">else</span> {
+        } else {
             check = false;
             <span class="loom_code_java_reserved">return </span>false;
         }
     });
     
-    <span class="loom_code_java_reserved">if</span>(check == true){
+    if(check == true){
         $(<span class="loom_code_java_string">"#sv_all"</span>).prop(<span class="loom_code_java_string">"checked"</span>, true);
-    } <span class="loom_code_java_reserved">else</span> {
+    } else {
         $(<span class="loom_code_java_string">"#sv_all"</span>).prop(<span class="loom_code_java_string">"checked"</span>, false);
     }
 }
@@ -595,17 +592,17 @@ function check_pref(obj_id, status, now_obj){
 
     var check = false;
     $(<span class="loom_code_java_string">"div#"</span> + obj_id).find(<span class="loom_code_java_string">"input[name='sv_pref_cd[]']"</span>).each(function(){
-        <span class="loom_code_java_reserved">if</span>($(<span class="loom_code_java_string">"#"</span> + <span class="loom_code_java_reserved">this</span>.id).is(':checked')){
+        if($(<span class="loom_code_java_string">"#"</span> + this.id).is(':checked')){
             check = true;
-        } <span class="loom_code_java_reserved">else</span> {
+        } else {
             check = false;
             <span class="loom_code_java_reserved">return </span>false;
         }
     });
 
-    <span class="loom_code_java_reserved">if</span>(check == true){
+    if(check == true){
         $(<span class="loom_code_java_string">"#"</span> + now_obj).prop(<span class="loom_code_java_string">"checked"</span>, true);
-    } <span class="loom_code_java_reserved">else</span> {
+    } else {
         $(<span class="loom_code_java_string">"#"</span> + now_obj).prop(<span class="loom_code_java_string">"checked"</span>, false);
     }
 
@@ -620,56 +617,56 @@ table_b (id, name, url, table_a_id)
 
 * table_a hasMany table_b
 * table_b belongsTo table_a
-* <span class="loom_code_java_reserved">for</span>eignKey is table_a_id
+* foreignKey is table_a_id
 </pre>
 <br>
 <p>step 1: create form inputs<br>
 ref: <a href="https://book.cakephp.org/3/en/views/helpers/form.html#creating-inputs-for-associated-data" target="_blank" rel="noopener noreferrer" class="loom-link-another">https://book.cakephp.org/3/en/views/helpers/form.html#creating-inputs-for-associated-data</a></p>
-<pre class="loom_code loom_code_java"><span class="loom_code_java_linecomment">// input <span class="loom_code_java_reserved">for</span> table_a</span>
-echo $<span class="loom_code_java_reserved">this</span>-&gt;Form-&gt;control('name');
+<pre class="loom_code loom_code_java"><span class="loom_code_java_linecomment">// input for table_a</span>
+echo $this-&gt;Form-&gt;control('name');
 
-<span class="loom_code_java_linecomment">// input <span class="loom_code_java_reserved">for</span> table_b</span>
-<span class="loom_code_java_linecomment">// <span class="loom_code_java_reserved">for</span>mat: table_name.array_index.field_name</span>
+<span class="loom_code_java_linecomment">// input for table_b</span>
+<span class="loom_code_java_linecomment">// format: table_name.array_index.field_name</span>
 <span class="loom_code_java_linecomment">// array_index start at 0</span>
-echo $<span class="loom_code_java_reserved">this</span>-&gt;Form-&gt;control('table_b.0.name');
-<span class="loom_code_java_linecomment">// warning: <span class="loom_code_java_reserved">if</span> not table_name.array_index.primary_field_name will add <span class="loom_code_java_reserved">new </span>alway</span>
+echo $this-&gt;Form-&gt;control('table_b.0.name');
+<span class="loom_code_java_linecomment">// warning: if not table_name.array_index.primary_field_name will add <span class="loom_code_java_reserved">new </span>alway</span>
 
 exmple:
-echo $<span class="loom_code_java_reserved">this</span>-&gt;Form-&gt;control('name');
-echo $<span class="loom_code_java_reserved">this</span>-&gt;Form-&gt;control('url');
-echo $<span class="loom_code_java_reserved">this</span>-&gt;Form-&gt;hidden('table_b.0.id');
-echo $<span class="loom_code_java_reserved">this</span>-&gt;Form-&gt;control('table_b.0.name');
-echo $<span class="loom_code_java_reserved">this</span>-&gt;Form-&gt;control('table_b.0.url');
+echo $this-&gt;Form-&gt;control('name');
+echo $this-&gt;Form-&gt;control('url');
+echo $this-&gt;Form-&gt;hidden('table_b.0.id');
+echo $this-&gt;Form-&gt;control('table_b.0.name');
+echo $this-&gt;Form-&gt;control('table_b.0.url');
 </pre>
 <br>
 <p>step 2: init data for update mode</p>
 <pre class="loom_code loom_code_java"><span class="loom_code_java_linecomment">// normal</span>
-<span class="loom_code_java_reserved">if</span> ($mode == '<span class="loom_code_java_reserved">for</span>update') {
-    $data = $<span class="loom_code_java_reserved">this</span>-&gt;TABLE-&gt;find()-&gt;where(['id' =&gt; $id])-&gt;epilog('FOR UPDATE')-&gt;first();
-} <span class="loom_code_java_reserved">else</span> {
-    $data = $<span class="loom_code_java_reserved">this</span>-&gt;TABLE-&gt;find()-&gt;where(['id' =&gt; $id])-&gt;first();
+if ($mode == 'forupdate') {
+    $data = $this-&gt;TABLE-&gt;find()-&gt;where(['id' =&gt; $id])-&gt;epilog('FOR UPDATE')-&gt;first();
+} else {
+    $data = $this-&gt;TABLE-&gt;find()-&gt;where(['id' =&gt; $id])-&gt;first();
 }
 
 <span class="loom_code_java_linecomment">// change to</span>
-<span class="loom_code_java_reserved">if</span> ($mode == '<span class="loom_code_java_reserved">for</span>update') {
-    $data = $<span class="loom_code_java_reserved">this</span>-&gt;TABLE-&gt;find()-&gt;contain('TableB')-&gt;where(['id' =&gt; $id])-&gt;epilog('FOR UPDATE')-&gt;first();
-} <span class="loom_code_java_reserved">else</span> {
-    $data = $<span class="loom_code_java_reserved">this</span>-&gt;TABLE-&gt;find()-&gt;contain('TableB')-&gt;where(['id' =&gt; $id])-&gt;first();
+if ($mode == 'forupdate') {
+    $data = $this-&gt;TABLE-&gt;find()-&gt;contain('TableB')-&gt;where(['id' =&gt; $id])-&gt;epilog('FOR UPDATE')-&gt;first();
+} else {
+    $data = $this-&gt;TABLE-&gt;find()-&gt;contain('TableB')-&gt;where(['id' =&gt; $id])-&gt;first();
 }
 </pre>
 <br>
 <p>step 3: patchEntity ( <b>maybe not</b> )</p>
 <pre class="loom_code loom_code_java"><span class="loom_code_java_linecomment">// normal</span>
-$data = $<span class="loom_code_java_reserved">this</span>-&gt;TABLE-&gt;patchEntity($data, $<span class="loom_code_java_reserved">this</span>-&gt;request-&gt;getData());
+$data = $this-&gt;TABLE-&gt;patchEntity($data, $this-&gt;request-&gt;getData());
 
 change to
-$data = $<span class="loom_code_java_reserved">this</span>-&gt;TABLE-&gt;patchEntity($data, $<span class="loom_code_java_reserved">this</span>-&gt;request-&gt;getData(), ['associated' =&gt; ['TableB']]);
+$data = $this-&gt;TABLE-&gt;patchEntity($data, $this-&gt;request-&gt;getData(), ['associated' =&gt; ['TableB']]);
 </pre>
 <p> <b>warning: table_b is table name, TableB is model name</b> </p>
 <h1 id="loom-header-17">2020/02/11 full-width katakana (全角カタカナで入力してください)</h1>
 <p>url : <a href="https://arts-factory.net/pattern/" target="_blank" rel="noopener noreferrer" class="loom-link-another">https://arts-factory.net/pattern/</a></p>
-<pre class="loom_code loom_code_java">echo $<span class="loom_code_java_reserved">this</span>-&gt;Form-&gt;control('katakana', ['type' =&gt; 'text'
-'','pattern' =&gt; '[\u30A1-\u30F6]*', 'oninput' =&gt; <span class="loom_code_java_string">"_validation(<span class="loom_code_java_reserved">this</span>, '{$kana_width}');"</span>, '' 
+<pre class="loom_code loom_code_java">echo $this-&gt;Form-&gt;control('katakana', ['type' =&gt; 'text'
+'','pattern' =&gt; '[\u30A1-\u30F6]*', 'oninput' =&gt; <span class="loom_code_java_string">"_validation(this, '{$kana_width}');"</span>, '' 
 'label' =&gt; ['id' =&gt; 'lbl_katakana', 'text' =&gt; __d('aoi', 'katakana')], 'placeholder' =&gt; '例：ヤマダ　タロウ', 'templateVars' =&gt; ['help' =&gt; '']]);
 </pre>
 <br>
@@ -681,7 +678,7 @@ $data = $<span class="loom_code_java_reserved">this</span>-&gt;TABLE-&gt;patchEn
             -&gt;notEmptyString('katakana')
             -&gt;add('katakana', 'custom', [
                 'rule' =&gt; function ($value, $context) {
-                    <span class="loom_code_java_reserved">if</span> (!preg_match(<span class="loom_code_java_string">"/^[ァ-・ヽヾ゛゜ー]+$/u"</span>, $value)) {
+                    if (!preg_match(<span class="loom_code_java_string">"/^[ァ-・ヽヾ゛゜ー]+$/u"</span>, $value)) {
                         <span class="loom_code_java_reserved">return </span>false;
                     }
                     <span class="loom_code_java_reserved">return </span>true;
@@ -698,7 +695,7 @@ $data = $<span class="loom_code_java_reserved">this</span>-&gt;TABLE-&gt;patchEn
  * 
  * @<span class="loom_code_java_reserved">return </span>string $value
  */</span>
-<span class="loom_code_java_reserved">if</span> (!function_exists('mb_trim')) {
+if (!function_exists('mb_trim')) {
     function mb_trim($value) {
         mb_internal_encoding('UTF-8');
         mb_regex_encoding('UTF-8');
@@ -766,8 +763,8 @@ $data = $<span class="loom_code_java_reserved">this</span>-&gt;TABLE-&gt;patchEn
                 }
 			}
 		};
-                var ctx1 = <span class="loom_code_java_reserved">do</span>cument.getElementById('chart-1');
-		win<span class="loom_code_java_reserved">do</span>w.myLine = <span class="loom_code_java_reserved">new </span>Chart(ctx1, config1);
+                var ctx1 = document.getElementById('chart-1');
+		window.myLine = <span class="loom_code_java_reserved">new </span>Chart(ctx1, config1);
 </pre>
 <br>
 <h1 id="loom-header-20">2020/01/15 cakePHP: validate email</h1>
@@ -778,7 +775,7 @@ $validator
 <span class="loom_code_java_linecomment">// แบบที่ 1</span>
 $validator
     -&gt;email('email_address' [, bool $checkMX = false [, string $message = null ]]);
-    <span class="loom_code_java_linecomment">// ถ้าต้องการ check <span class="loom_code_java_reserved">do</span>main ของ email ที่ input เข้ามา $checkMX = true</span>
+    <span class="loom_code_java_linecomment">// ถ้าต้องการ check domain ของ email ที่ input เข้ามา $checkMX = true</span>
     <span class="loom_code_java_linecomment">// ถ้าต้องการกำหนด ข้อความแจ้งเตือนเอง ให้ใส่ข้อความที่ต้องการ ใน $message</span>
     ตัวอย่าง:
     $validator
@@ -791,7 +788,7 @@ $validator
         'rule'    =&gt; ['email' [, bool $checkMX = false [, string $regex = null ]]],
         'message' =&gt; $message,
     ]);
-    <span class="loom_code_java_linecomment">// ถ้าต้องการ check <span class="loom_code_java_reserved">do</span>main ของ email ที่ input เข้ามา $checkMX = true</span>
+    <span class="loom_code_java_linecomment">// ถ้าต้องการ check domain ของ email ที่ input เข้ามา $checkMX = true</span>
     <span class="loom_code_java_linecomment">// ถ้าต้องการตรวจสอบ รูปแบบของ email เอง ให้ใส่ใน $regex</span>
     <span class="loom_code_java_linecomment">// ถ้าต้องการกำหนด ข้อความแจ้งเตือนเอง ให้ใส่ข้อความที่ต้องการ ใน $message</span>
     ตัวอย่าง:
@@ -799,7 +796,7 @@ $validator
         -&gt;scalar('email_address')
         -&gt;add('email_address', 'custom', [
             'rule'    =&gt; ['email', true, '/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9_.+-]+\.[a-zA-Z0-9_.+-]+$/'],
-            'message' =&gt; '<span class="loom_code_java_reserved">for</span>mat not correctly.',
+            'message' =&gt; 'format not correctly.',
         ]);
 </pre>
 <p>หมายเหตุ: สามารถใช้ทั้ง 2 แบบรวมกัน</p>
@@ -809,7 +806,7 @@ $validator
 run command as administrator</p>
 <pre class="loom_code loom_code_java">cd ไป directory ที่ต้องการสร้าง link
 mklink [/d] includes <span class="loom_code_java_string">"c:\work\projects\includes"</span>
-* <span class="loom_code_java_reserved">default</span> ไม่ใส่ /d จะเป็นการ link file
+* default ไม่ใส่ /d จะเป็นการ link file
 * ถ้าใส่ /d จะเป็นการ link directory
 </pre>
 <br>
@@ -825,9 +822,9 @@ ln -s /work/projects/includes includes
 vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]<br>
 ใน config.vm.provider</p>
 <pre class="loom_code loom_code_java">  ตัวอย่าง
-  config.vm.provider <span class="loom_code_java_string">"virtualbox"</span> <span class="loom_code_java_reserved">do</span> |vb|
+  config.vm.provider <span class="loom_code_java_string">"virtualbox"</span> do |vb|
     vb.gui = true
-    vb.customize [<span class="loom_code_java_string">"mod<span class="loom_code_java_reserved">if</span>yvm"</span>, :id, <span class="loom_code_java_string">"--memory"</span>, <span class="loom_code_java_string">"2048"</span>, <span class="loom_code_java_string">"--cpus"</span>, <span class="loom_code_java_string">"2"</span>, <span class="loom_code_java_string">"--ioapic"</span>, <span class="loom_code_java_string">"on"</span>, <span class="loom_code_java_string">"--cableconnected1"</span>, <span class="loom_code_java_string">"on"</span>]
+    vb.customize [<span class="loom_code_java_string">"modifyvm"</span>, :id, <span class="loom_code_java_string">"--memory"</span>, <span class="loom_code_java_string">"2048"</span>, <span class="loom_code_java_string">"--cpus"</span>, <span class="loom_code_java_string">"2"</span>, <span class="loom_code_java_string">"--ioapic"</span>, <span class="loom_code_java_string">"on"</span>, <span class="loom_code_java_string">"--cableconnected1"</span>, <span class="loom_code_java_string">"on"</span>]
     vb.customize [<span class="loom_code_java_string">"setextradata"</span>, :id, <span class="loom_code_java_string">"VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root"</span>, <span class="loom_code_java_string">"1"</span>]
   end
   จากนั้น restart vagrant
@@ -843,7 +840,7 @@ restart เครื่อง</p>
 <p>ให้แก้ไขไฟล์ /etc/postfix/header_checks 2 บันทัดล่างสุด</p>
 <pre class="loom_code loom_code_java">#/^To:([^@]*@egg.co.jp)*$/ OK         &lt;- ของเดิม ให้ใส่ comment (#) หรือลบทิ้ง
 #/^To:.*/ REDIRECT system@egg.co.jp   &lt;- ของเดิม ให้ใส่ comment (#) หรือลบทิ้ง
-/^To:([^@]*@egg.co.th)*$/ OK            &lt;- แก้ email <span class="loom_code_java_reserved">do</span>main เช่น egg.co.th
+/^To:([^@]*@egg.co.th)*$/ OK            &lt;- แก้ email domain เช่น egg.co.th
 /^To:.*/ REDIRECT you_email@egg.co.th    &lt;- แก้ you_email คือชื่อ email ที่จะรับเมล์ที่ redirect มาและต้องมีอยู่จริง
 </pre>
 <p>หลังจากแก้ไขไฟล์เสร็จให้ restart service</p>
@@ -853,8 +850,8 @@ restart เครื่อง</p>
 จะถูก redirect ไปที่ you_email@egg.co.th ทั้งหมด</p>
 <h1 id="loom-header-24">2020/01/13 แก้ไขปัญหา เวลาทดสอบส่งเมล์ แล้วเมล์ไม่สามารถส่งออกเนต</h1>
 <p>ให้แก้ไขไฟล์ /etc/postfix/main.cf ตาม parameter นี้</p>
-<pre class="loom_code loom_code_java">my<span class="loom_code_java_reserved">do</span>main = egg.co.th
-myorigin = $my<span class="loom_code_java_reserved">do</span>main
+<pre class="loom_code loom_code_java">mydomain = egg.co.th
+myorigin = $mydomain
 </pre>
 <p>ถ้ามี comment (#) ให้เอา comment (#) ออก<br>
 หลังจากแก้ไขไฟล์เสร็จให้ restart service</p>
@@ -862,14 +859,14 @@ myorigin = $my<span class="loom_code_java_reserved">do</span>main
 </pre>
 <p>กรณี vagrant ถ้ายังส่งไม่ได้<br>
 ให้ไปแก้ไขไฟล์ Vagrantfile ใน directory ที่ run คำสั่ง vagrant up</p>
-<pre class="loom_code loom_code_java">Vagrant.configure(<span class="loom_code_java_string">"2"</span>) <span class="loom_code_java_reserved">do</span> |config|
+<pre class="loom_code loom_code_java">Vagrant.configure(<span class="loom_code_java_string">"2"</span>) do |config|
 
   config.vm.box = <span class="loom_code_java_string">"wittman/centos-6.8-ansible"</span>
   config.vm.box_check_update = false
   config.vm.hostname = <span class="loom_code_java_string">"egg.co.th"</span> &lt;- เพิ่มบันทัดนี้
   config.vm.network <span class="loom_code_java_string">"private_network"</span>, ip: <span class="loom_code_java_string">"192.168.33.6"</span>
-  config.vm.network <span class="loom_code_java_string">"<span class="loom_code_java_reserved">for</span>warded_port"</span>, guest: 9000, host: 9000
-  config.ssh.<span class="loom_code_java_reserved">for</span>ward_agent = true
+  config.vm.network <span class="loom_code_java_string">"forwarded_port"</span>, guest: 9000, host: 9000
+  config.ssh.forward_agent = true
   
   ...
   
@@ -893,7 +890,7 @@ end
 <p>at file config/app.php (section EmailTransport)</p>
 <p>Mail - Send using PHP mail function</p>
 <pre class="loom_code loom_code_java">    'EmailTransport' =&gt; [
-        '<span class="loom_code_java_reserved">default</span>' =&gt; [
+        'default' =&gt; [
             'className' =&gt; 'Mail', <span class="loom_code_java_linecomment">// แก้ตรงนี้ที่เดียว</span>
             <span class="loom_code_java_blockcomment">/*
              * The following keys are used in SMTP transports:
@@ -912,7 +909,7 @@ end
 <br>
 <p>Smtp - Send using SMTP</p>
 <pre class="loom_code loom_code_java">    'EmailTransport' =&gt; [
-        '<span class="loom_code_java_reserved">default</span>' =&gt; [
+        'default' =&gt; [
             'className' =&gt; 'Smtp', <span class="loom_code_java_linecomment">// แก้ตรงนี้</span>
             <span class="loom_code_java_blockcomment">/*
              * The following keys are used in SMTP transports:
@@ -932,9 +929,9 @@ end
 <br>
 <h1 id="loom-header-26">2019/12/27 แปลง kata_kana uppercase, kata_kana lowercase, hirakana</h1>
 <br>
-<pre class="loom_code loom_code_java"><span class="loom_code_java_linecomment">// バム kata_kana upper<span class="loom_code_java_reserved">case</span></span>
+<pre class="loom_code loom_code_java"><span class="loom_code_java_linecomment">// バム kata_kana uppercase</span>
 
-<span class="loom_code_java_linecomment">// ﾊﾞﾑ kata_kana lower<span class="loom_code_java_reserved">case</span></span>
+<span class="loom_code_java_linecomment">// ﾊﾞﾑ kata_kana lowercase</span>
 
 <span class="loom_code_java_linecomment">// ばむ hira-gana</span>
 
@@ -961,11 +958,11 @@ echo mb_convert_kana('ﾊﾞﾑ', 'HV')
 <br>
 <h1 id="loom-header-27">2019/12/24 เปลี่ยนคำที่โชว์ required</h1>
 <br>
-<pre class="loom_code loom_code_java">&lt;label&gt;&lt;?=$<span class="loom_code_java_reserved">this</span>-&gt;Form-&gt;checkbox('agree1',[<span class="loom_code_java_string">"id"</span> =&gt; <span class="loom_code_java_string">"agree1"</span>, <span class="loom_code_java_string">"oninvalid"</span>=&gt;<span class="loom_code_java_string">"agree1_oninvalid(<span class="loom_code_java_reserved">this</span>)"</span>, <span class="loom_code_java_string">"oninput"</span>=&gt;<span class="loom_code_java_string">"setCustomValidity('')"</span>] )?&gt;①に同意する&lt;/label&gt;
+<pre class="loom_code loom_code_java">&lt;label&gt;&lt;?=$this-&gt;Form-&gt;checkbox('agree1',[<span class="loom_code_java_string">"id"</span> =&gt; <span class="loom_code_java_string">"agree1"</span>, <span class="loom_code_java_string">"oninvalid"</span>=&gt;<span class="loom_code_java_string">"agree1_oninvalid(this)"</span>, <span class="loom_code_java_string">"oninput"</span>=&gt;<span class="loom_code_java_string">"setCustomValidity('')"</span>] )?&gt;①に同意する&lt;/label&gt;
 function agree1_oninvalid(input){
-        <span class="loom_code_java_reserved">if</span>($(<span class="loom_code_java_string">"#hidden_submit"</span>).val() == 1){
+        if($(<span class="loom_code_java_string">"#hidden_submit"</span>).val() == 1){
             input.setCustomValidity('同意１にチェックがない場合は遷移できません');
-        } <span class="loom_code_java_reserved">else</span> {
+        } else {
             input.setCustomValidity('');
         }
     }
@@ -1000,7 +997,7 @@ function agree1_oninvalid(input){
 <pre class="loom_code loom_code_java">[vagrant@localhost ~]$
 </pre>
 <p>จากนั้นรันคำสั่ง</p>
-<pre class="loom_code loom_code_java">su<span class="loom_code_java_reserved">do</span> du
+<pre class="loom_code loom_code_java">sudo du
 </pre>
 <p>และ</p>
 <pre class="loom_code loom_code_java">chmod 777 /path/to/php/session
@@ -1008,12 +1005,12 @@ function agree1_oninvalid(input){
 <p>/path/to/php/session ถ้าไม่รู้ให้หาจาก phpinfo() session.save_path</p>
 <h1 id="loom-header-30">2019/11/14  trim data before save</h1>
 <pre class="loom_code loom_code_java"><span class="loom_code_java_javadoccomment">/**
-     * convert data be<span class="loom_code_java_reserved">for</span>e validate
+     * convert data before validate
      */</span>
-    <span class="loom_code_java_reserved">public </span>function be<span class="loom_code_java_reserved">for</span>eMarshal(Event $event, ArrayObject $data, ArrayObject $options)
+    <span class="loom_code_java_reserved">public </span>function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
     {
-        <span class="loom_code_java_reserved">for</span>each ($data as $key =&gt; $value) {
-            <span class="loom_code_java_reserved">if</span> (is_string($value)) {
+        foreach ($data as $key =&gt; $value) {
+            if (is_string($value)) {
                 $data[$key] = trim($value);
             }
         }
@@ -1041,29 +1038,29 @@ git revert 4165bf6 -m 1<br>
 <h1 id="loom-header-33">2019/08/17 Change Validate Data Table on Controller</h1>
 <p>ใช้ในกรณีที่ถ้าเลือกอะไรบ้างอย่าง แล้วต้องการให้ บางอย่าง req. เช่น เมือทำการ เลือก check box &nbsp;นี้แล้วต้องการให้ text box req.</p>
 <pre class="loom_code loom_code_java">on Edit Function
-<span class="loom_code_java_reserved">if</span> ($<span class="loom_code_java_reserved">this</span>-&gt;request-&gt;is(['patch', 'post', 'put'])) {
+if ($this-&gt;request-&gt;is(['patch', 'post', 'put'])) {
    <span class="loom_code_java_linecomment">//----------------------------------------</span>
    <span class="loom_code_java_linecomment">// 削除ボタン押下(delete button click)</span>
    <span class="loom_code_java_linecomment">//----------------------------------------</span>
-   <span class="loom_code_java_reserved">if</span> ($<span class="loom_code_java_reserved">this</span>-&gt;request-&gt;getData('title_file_delete') != '') {
-      $<span class="loom_code_java_reserved">this</span>-&gt;_fileDelete('title_file');
+   if ($this-&gt;request-&gt;getData('title_file_delete') != '') {
+      $this-&gt;_fileDelete('title_file');
       return;
    }
 			
    <span class="loom_code_java_linecomment">//Change Validete</span>
-   <span class="loom_code_java_reserved">if</span> ( $isCheckBox == true ) {
-      $<span class="loom_code_java_reserved">this</span>-&gt;TABLE-&gt;getValidator('<span class="loom_code_java_reserved">default</span>')
+   if ( $isCheckBox == true ) {
+      $this-&gt;TABLE-&gt;getValidator('default')
             -&gt;notEmpty('period_start_date', 'を入力してください。5555');
    }
    <span class="loom_code_java_linecomment">//----------------------------</span>
    <span class="loom_code_java_linecomment">// post2data</span>
    <span class="loom_code_java_linecomment">// value ck</span>
    <span class="loom_code_java_linecomment">//----------------------------</span>
-   $<span class="loom_code_java_reserved">this</span>-&gt;DB-&gt;begin();
-   $data = $<span class="loom_code_java_reserved">this</span>-&gt;_edit_value_ck($id);
-   <span class="loom_code_java_reserved">if</span> ($data === false) {
+   $this-&gt;DB-&gt;begin();
+   $data = $this-&gt;_edit_value_ck($id);
+   if ($data === false) {
       <span class="loom_code_java_linecomment">//Clear Validate</span>
-      $<span class="loom_code_java_reserved">this</span>-&gt;TABLE-&gt;getValidator('<span class="loom_code_java_reserved">default</span>')
+      $this-&gt;TABLE-&gt;getValidator('default')
             -&gt;allowEmptyDateTime('period_start_date');
       return;
    }
@@ -1071,7 +1068,7 @@ git revert 4165bf6 -m 1<br>
 <br>
 <h1 id="loom-header-34">2019/07/01 Windows 10 &amp; VM with case sensitive files and folders</h1>
 <p>open a PowerShell prompt with administrative privileges and run the command below</p>
-<pre class="loom_code loom_code_java">Enable-Win<span class="loom_code_java_reserved">do</span>wsOptionalFeature -Online -FeatureName Microsoft-Win<span class="loom_code_java_reserved">do</span>ws-Subsystem-Linux
+<pre class="loom_code loom_code_java">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 </pre>
 <p>reboot</p>
 <p>open a PowerShell prompt with administrative privileges and run the command below<br>
@@ -1118,7 +1115,7 @@ What is the path you would like to output?
 [Q]uit
 [/work/hyogo_healthcare/src/Locale] &gt;[กด enter]
 
-Would you like to merge all <span class="loom_code_java_reserved">do</span>main strings into the <span class="loom_code_java_reserved">default</span>.pot file? (y/n)
+Would you like to merge all domain strings into the default.pot file? (y/n)
 [n] &gt; y[กด enter]
 </pre>
 <br>
@@ -1179,7 +1176,7 @@ use ArrayObject;
 			-&gt;add('instruction_cd', 'unique', [
                 'rule'     =&gt; ['validateUnique', ['scope' =&gt; ['instruction_cd','members_no']]],
                 'provider' =&gt; 'table',
-                'message'  =&gt; __('nen<span class="loom_code_java_reserved">do</span>, staff_no must be unique')]);
+                'message'  =&gt; __('nendo, staff_no must be unique')]);
 </pre>
 <br>
 <br>
@@ -1188,13 +1185,13 @@ use ArrayObject;
 <pre class="loom_code loom_code_java">&lt;script&gt;
 var message = '&lt;?php echo __x('TdExaminees','Please fill in English only.') ?&gt;';
 function chkEnglishOnly() {
-    var number = <span class="loom_code_java_reserved">do</span>cument.getElementById(<span class="loom_code_java_string">"number"</span>).value;
+    var number = document.getElementById(<span class="loom_code_java_string">"number"</span>).value;
     var regex = /[\u3000-\u303f]|[\u3040-\u309f]|[\u30a0-\u30ff]|[\uff00-\uff9f]|[\u4e00-\u9faf]|[\u3400-\u4dbf]/;
 
-<span class="loom_code_java_reserved">if</span>(regex.test(number)) {
+if(regex.test(number)) {
     console.log(<span class="loom_code_java_string">"Japanese characters found"</span>)
 }
-<span class="loom_code_java_reserved">else</span> {
+else {
     console.log(<span class="loom_code_java_string">"No Japanese characters"</span>);
 }
 }
@@ -1228,7 +1225,7 @@ vi /etc/php.d/15-xdebug.ini</p>
 &lt;script type=<span class="loom_code_java_string">"text/javascript"</span> src=<span class="loom_code_java_string">"<span class="loom_code_java_linecomment">//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"</span>&gt;&lt;/script&gt;</span>
 &lt;script type=<span class="loom_code_java_string">"text/javascript"</span>&gt;
     $(function() {
-        $('<span class="loom_code_java_reserved">for</span>m').bootstrapValidator({
+        $('form').bootstrapValidator({
             live: 'enabled',
             feedbackIcons: {
                 valid: 'glyphicon glyphicon-ok',
@@ -1275,7 +1272,7 @@ nendo = 2018<br>
 <p>เพิ่ม loop ใน egg_define ให้เพิ่ม value ตามที่วนลูป</p>
 <pre class="loom_code loom_code_java">'AR_base_age' =&gt; call_user_func( function(){
             $AR_base_age = [];
-            <span class="loom_code_java_reserved">for</span>($i = 16; $i &lt;= 99; $i++){
+            for($i = 16; $i &lt;= 99; $i++){
                 $AR_base_age[$i] = $i;
             }
         
@@ -1287,15 +1284,15 @@ nendo = 2018<br>
 <h1 id="loom-header-48">2019/10/08 หน้าแรก layout ใน cakephp มีหลาย page</h1>
 <p>ex. page defualt.ctp , page custom.ctp<br>
 AppController.php</p>
-<pre class="loom_code loom_code_java"><span class="loom_code_java_reserved">public </span>function be<span class="loom_code_java_reserved">for</span>eRender(Event $event)
+<pre class="loom_code loom_code_java"><span class="loom_code_java_reserved">public </span>function beforeRender(Event $event)
    {
-       $prefix = $<span class="loom_code_java_reserved">this</span>-&gt;request-&gt;getParam('prefix');
-       <span class="loom_code_java_reserved">if</span> ($prefix == 'admin') {
-           $<span class="loom_code_java_reserved">this</span>-&gt;layout = '<span class="loom_code_java_reserved">default</span>';
+       $prefix = $this-&gt;request-&gt;getParam('prefix');
+       if ($prefix == 'admin') {
+           $this-&gt;layout = 'default';
        }
-       <span class="loom_code_java_reserved">else</span>
+       else
        {
-           $<span class="loom_code_java_reserved">this</span>-&gt;layout = 'custom';
+           $this-&gt;layout = 'custom';
        }
 }
    }
