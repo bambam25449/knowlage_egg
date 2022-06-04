@@ -1007,7 +1007,7 @@ function agree1_oninvalid(input){
 <pre class="loom_code loom_code_java"><span class="loom_code_java_javadoccomment">/**
      * convert data before validate
      */</span>
-    <span class="loom_code_java_reserved">public </span>function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
+    return function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
     {
         foreach ($data as $key =&gt; $value) {
             if (is_string($value)) {
@@ -1221,8 +1221,8 @@ vi /etc/php.d/15-xdebug.ini</p>
  </p>
 <h1 id="loom-header-43">2018/11/20 การ setup ให้ text box กรอกภาษาอังกฤษได้อย่างเดียว</h1>
 <p>ใน template เพิ่ม</p>
-<pre class="loom_code loom_code_java">&lt;link rel=<span class="loom_code_java_string">"stylesheet"</span> href=<span class="loom_code_java_string">"<span class="loom_code_java_linecomment">//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"</span>/&gt;</span>
-&lt;script type=<span class="loom_code_java_string">"text/javascript"</span> src=<span class="loom_code_java_string">"<span class="loom_code_java_linecomment">//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"</span>&gt;&lt;/script&gt;</span>
+<pre class="loom_code loom_code_java">&lt;link rel=<span class="loom_code_java_string">"stylesheet"</span> href=<span class="loom_code_java_string">"//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/&gt;</span>
+&lt;script type=<span class="loom_code_java_string">"text/javascript"</span> src=<span class="loom_code_java_string">"//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"&gt;&lt;/script&gt;</span>
 &lt;script type=<span class="loom_code_java_string">"text/javascript"</span>&gt;
     $(function() {
         $('form').bootstrapValidator({
@@ -1284,7 +1284,7 @@ nendo = 2018<br>
 <h1 id="loom-header-48">2019/10/08 หน้าแรก layout ใน cakephp มีหลาย page</h1>
 <p>ex. page defualt.ctp , page custom.ctp<br>
 AppController.php</p>
-<pre class="loom_code loom_code_java"><span class="loom_code_java_reserved">public </span>function beforeRender(Event $event)
+<pre class="loom_code loom_code_java">return function beforeRender(Event $event)
    {
        $prefix = $this-&gt;request-&gt;getParam('prefix');
        if ($prefix == 'admin') {
