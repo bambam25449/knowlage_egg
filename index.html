@@ -1004,17 +1004,15 @@ function agree1_oninvalid(input){
 </pre>
 <p>/path/to/php/session ถ้าไม่รู้ให้หาจาก phpinfo() session.save_path</p>
 <h1 id="loom-header-30">2019/11/14  trim data before save</h1>
-<pre class="loom_code loom_code_java"><span class="loom_code_java_javadoccomment">/**
-     * convert data before validate
-     */</span>
-    public function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
-    {
-        foreach ($data as $key =&gt; $value) {
-            if (is_string($value)) {
-                $data[$key] = trim($value);
-            }
+<pre class="loom_code loom_code_java">
+public function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
+{
+    foreach ($data as $key =&gt; $value) {
+        if (is_string($value)) {
+            $data[$key] = trim($value);
         }
     }
+}
 </pre>
 <h1 id="loom-header-31">2019/11/12 mpdf create file pdf รองรับภาษาต่างๆได้ วิธีการคือ เพิ่ม font ภาษานั้นๆ</h1>
 <p>ตัวอย่าง create file pdf มีภาษาญี่ปุ่น<br>
