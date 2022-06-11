@@ -1007,7 +1007,7 @@ function agree1_oninvalid(input){
 <pre class="loom_code loom_code_java"><span class="loom_code_java_javadoccomment">/**
      * convert data before validate
      */</span>
-    return function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
+    public function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
     {
         foreach ($data as $key =&gt; $value) {
             if (is_string($value)) {
@@ -1284,7 +1284,7 @@ nendo = 2018<br>
 <h1 id="loom-header-48">2019/10/08 หน้าแรก layout ใน cakephp มีหลาย page</h1>
 <p>ex. page defualt.ctp , page custom.ctp<br>
 AppController.php</p>
-<pre class="loom_code loom_code_java">return function beforeRender(Event $event)
+<pre class="loom_code loom_code_java">public function beforeRender(Event $event)
    {
        $prefix = $this-&gt;request-&gt;getParam('prefix');
        if ($prefix == 'admin') {
